@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Deep learning based Face Anti-spoofing</title>
+<title>Asynchronous multi-GPU training for deep learning</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
@@ -102,38 +102,32 @@
   <div class="row">
     <div class="col-lg-8">
       <div class="content-column-content">
-         <h1>Deep learning based Face Anti-spoofing</h1>
-         <p>Using auxiliary supervision to detect spoofs in face recognition systems.<br />
-@ <a href="https://www.ceeri.res.in/intelligent-systems-group/">CEERI</a> | Summer, 2019.</p>
+         <h1>Asynchronous multi-GPU training for deep learning</h1>
+         <p>Asynchronous optimizer for a distributed data parallel training regime</p>
 
-<p>Team members: Arshdeep Singh, Pranav Mahajan</p>
+<p>@ <a href="https://www.nvidia.com/en-in/">Nvidia</a> | Summer, 2020.</p>
 
-<p>Mentors: <a href="https://www.ceeri.res.in/profiles/sanjay-singh/">Dr. Sanjay Singh</a>, <a href="https://www.ceeri.res.in/profiles/sumeet-saurav/">Mr. Sumeet Saurav</a>, <a href="https://www.ceeri.res.in/profiles/shyam/">Mr. Shyam Sundar</a></p>
+<p>Team Members: Pranav Mahajan (intern), <a href="https://www.linkedin.com/in/supratikmajumder/">Supratik Majumder</a> (mentor), <a href="https://www.linkedin.com/in/s-santosh-kumar-madugula-87666345/">Santosh Madugula</a> (mentor), <a href="https://www.linkedin.com/in/raghuram-iyer-823aa64/?originalSubdomain=in">Raghuram L</a> (manager).</p>
 
-<p>This work was done as Summer Research Internship @ Cyber Physical Systems Department, CSIR-CEERI, Pilani, Rajasthan, India.
-Arshdeep and I proposed and trained 2 of 4 deep neural net models that were shipped to LG that summer as a part of LG funded research project (INR 53.10 Lakhs / USD 716k)</p>
+<p>I implemented an asynchronous stochastic gradient descent (SGD) for a distributed data parallel training regime for the single-shot detector (SSD) network and quantified its performance.
+Please find my final <a href="https://drive.google.com/file/d/1-MCKIWdPY9q3a8N4RWPSyikxS0sphwjs/view?usp=sharing">presentation</a>
+and a detailed <a href="https://drive.google.com/file/d/1TPUiuRhnXaNDvjheOkxKBOlKl3DuquPW/view?usp=sharing">report</a> for more details. I&rsquo;ve also been fortunate to receive a  pre-placement offer
+by the end of this internship.</p>
 
 <h3 id="overview">Overview</h3>
 
-<p>Face recognition systems can be spoofed in atleast 13 different ways, thus there is a necessity of face anti-spoofing systems that work along with them.
-Various end-to-end binary classification models fit to arbitrary cues like screen bezel etc. instead of more faithful features like skin detail loss, colour distortion and shape deformation.
-Thus by using auxiliary supervision, we can nudge the model to learn explainable spatial and temporal information.</p>
-
-<blockquote>
-<p>We are building deep learning models to estimate depth maps for understanding spatial information and estimate rPPG signals for understanding temporal information.</p>
-
-<p>rPPG signals are remote polyplethysmographic signals that correspond to blood flow through our vessels and can be estimated using various techniques as they show high correlation with intensity changes.</p>
-</blockquote>
-
-<h3 id="progress-further-work">Progress &amp; further work</h3>
-
-<ul>
-<li>Currently we have depth-estimator models based on 3D-CNN as well as CNN-LSTM architectures.</li>
-<li>Future work includes implementing an rPPG estimator model try different domain adaptation techniques.</li>
-<li>Eventually we wish to do extensive intra and inter database testing with varied input frame length.</li>
-</ul>
-
-<p>Any and all suggestions are welcome. Feel free to reach me at mahajan.pranav25[AT]gmail[DOT]com</p>
+<p>Distributed data-parallel training has been using synchronous training for the past years, we can see in the recent
+MLPerf submissions as well. In this work, we try to understand the performance scalability issues with synchronous
+training and how researchers have attempted to solve it via asynchronous techniques. Most of the prior methods
+for asynchronous methods use the concept of parameter servers, which has its drawbacks, such as communication
+bottleneck with the server. We devise and implement a strategy for basic asynchronous training (without the use of
+parameter servers) for our current setup, where gradient sharing takes place using all reduce. We compare our
+implementation of asynchronous SGD with synchronous SGD in terms of total step time and convergence. We
+quantify the performance in terms of step time required for a forward pass, backward pass + all reduce,
+optimization step, and quantify jitter for synchronous training on the Single Stage Detector (SSD) network. We also
+compare the decrease in loss function value per epoch between synchronous SGD and asynchronous SGD. We see
+the asynchronous SGD loss starts deviating from the synchronous SGD, from the second epoch onward for the SSD
+network. We conclude by discussing the possibilities of future work.</p>
          
       </div>
     </div>

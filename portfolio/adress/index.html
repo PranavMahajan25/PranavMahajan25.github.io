@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Deep learning based Face Anti-spoofing</title>
+<title>ADReSS</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
@@ -102,38 +102,55 @@
   <div class="row">
     <div class="col-lg-8">
       <div class="content-column-content">
-         <h1>Deep learning based Face Anti-spoofing</h1>
-         <p>Using auxiliary supervision to detect spoofs in face recognition systems.<br />
-@ <a href="https://www.ceeri.res.in/intelligent-systems-group/">CEERI</a> | Summer, 2019.</p>
+         <h1>ADReSS</h1>
+         <p>Early detection of Alzheimer&rsquo;s dementia through spontaneous speech</p>
 
-<p>Team members: Arshdeep Singh, Pranav Mahajan</p>
+<p>@ <a href="http://bitscogneuro.com/">CNRL</a> | Status : Active</p>
 
-<p>Mentors: <a href="https://www.ceeri.res.in/profiles/sanjay-singh/">Dr. Sanjay Singh</a>, <a href="https://www.ceeri.res.in/profiles/sumeet-saurav/">Mr. Sumeet Saurav</a>, <a href="https://www.ceeri.res.in/profiles/shyam/">Mr. Shyam Sundar</a></p>
+<p>Team members: Pranav Mahajan.</p>
 
-<p>This work was done as Summer Research Internship @ Cyber Physical Systems Department, CSIR-CEERI, Pilani, Rajasthan, India.
-Arshdeep and I proposed and trained 2 of 4 deep neural net models that were shipped to LG that summer as a part of LG funded research project (INR 53.10 Lakhs / USD 716k)</p>
+<p>Supervisor: <a href="https://universe.bits-pilani.ac.in/goa/veeky/profile">Dr. Veeky Baths</a>.</p>
 
-<h3 id="overview">Overview</h3>
+<p>This project started as a single author participation to the <a href="www.homepages.ed.ac.uk/sluzfil/ADReSS/">ADReSS Challenge</a> shared-task at Interspeech 2020, which got weak rejected.
+After improving the work, under the guidance of Dr. Veeky, the paper is now under review at <a href="https://www.frontiersin.org/research-topics/13702/alzheimers-dementia-recognition-through-spontaneous-speech">Frontiers research topic - ADReSS</a>.</p>
 
-<p>Face recognition systems can be spoofed in atleast 13 different ways, thus there is a necessity of face anti-spoofing systems that work along with them.
-Various end-to-end binary classification models fit to arbitrary cues like screen bezel etc. instead of more faithful features like skin detail loss, colour distortion and shape deformation.
-Thus by using auxiliary supervision, we can nudge the model to learn explainable spatial and temporal information.</p>
+<h3 id="the-research-side-of-things">The research side of things</h3>
 
-<blockquote>
-<p>We are building deep learning models to estimate depth maps for understanding spatial information and estimate rPPG signals for understanding temporal information.</p>
+<p>Current methods for early diagnosis of Alzheimer’s Dementia include structured
+questionnaires, structured interviews, and various cognitive tests. Language difficulties are a
+major problem in dementia as linguistic skills break down. Current methods do not provide
+robust tools to capture the true nature of language deficits in spontaneous speech. Early
+detection of Alzheimer’s Dementia from spontaneous speech overcomes the limitations of
+earlier approaches as it is less time consuming, can be done at home, and is relatively
+inexpensive. In this work, we re-implement the existing NLP methods, which used CNN-LSTM architectures and targeted features from conversational transcripts. Further, we build
+upon their work by devising an end-to-end deep learning-based solution that performs a
+binary classification of Alzheimer’s Dementia and predicts the MMSE score from the
+spontaneous speech of the patients. We utilize the ADReSS dataset for all our
+implementations and explore the deep learning-based methods of combining acoustic
+features into a common vector using recurrent units. We propose a bi-modal approach for
+both the tasks and discuss the merits and challenges of our approach.</p>
 
-<p>rPPG signals are remote polyplethysmographic signals that correspond to blood flow through our vessels and can be estimated using various techniques as they show high correlation with intensity changes.</p>
-</blockquote>
-
-<h3 id="progress-further-work">Progress &amp; further work</h3>
+<p>Our attempt to include an acoustic feature processing stream (Speech-GRU) aims to address the following questions:</p>
 
 <ul>
-<li>Currently we have depth-estimator models based on 3D-CNN as well as CNN-LSTM architectures.</li>
-<li>Future work includes implementing an rPPG estimator model try different domain adaptation techniques.</li>
-<li>Eventually we wish to do extensive intra and inter database testing with varied input frame length.</li>
+<li>How to capture complex patterns and temporal relations in speech and language modalities?</li>
+<li>And more importantly are there temporal patterns in the acoustic features extracted using the paralinguistic feature sets, which can prove to be useful early detection of AD?</li>
 </ul>
 
-<p>Any and all suggestions are welcome. Feel free to reach me at mahajan.pranav25[AT]gmail[DOT]com</p>
+<p>The following is a schematic of overview of deep learning-based models implemented in this work
+<img src="/img/portfolio/Frontiers_models.png" alt="A schematic of overview of deep learning-based models implemented in this work" /></p>
+
+<h3 id="the-product-development-side-of-things">The product development side of things</h3>
+
+<p>I am currently also leading a team of motivated software developers at BITS Goa, to develop applications which serve a dual purpose of collecting more AD speech data with ease
+as well as run inference to predict AD and it&rsquo;s severity from spontaneous speech. We are focusing on extending to collecting AD and control speech data from low-resource languages in India,
+and our setting up collaborations with government hospitals and medical colleges (for example, B. J. medical college in Pune, Maharashtra). Languages like Hindi and Marathi are not exactly low-resource for other NLP tasks now with abundance of natural language data,
+but in context of AD speech and the cookie-theft picture paradigm, adds to the difficulty making it a low-resource spoken language problem. A primary motivation factor for this is that the models trained on the Dementia Bank dataset,
+even giving state-of-the-art performance on these datasets only cater to a small fraction of native english-speaking population of the 50 million people affected by AD each year.</p>
+
+<p>Our initial outline can be found in this <a href="https://docs.google.com/presentation/d/15TdLEQ78TQSOsyZ4oiX7F0WA6yWrW-W3DI2aNLtACIc/edit?usp=sharing">presentation</a>. This work is supported by Technology Incubation Program at Center of Technical Education at BITS Goa.</p>
+
+<p>This is a work in progress, stay tuned for more!  Feel free to reach me at mahajan.pranav25[AT]gmail[DOT]com</p>
          
       </div>
     </div>

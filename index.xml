@@ -12,25 +12,36 @@
     
     
     <item>
-      <title>Deep learning based Face Anti-spoofing</title>
-      <link>https://pranavmahajan25.github.io/portfolio/face-anti-spoofing/</link>
-      <pubDate>Sat, 05 Nov 2016 19:41:01 +0530</pubDate>
+      <title>NeuroQ</title>
+      <link>https://pranavmahajan25.github.io/portfolio/neuroq/</link>
+      <pubDate>Sat, 05 Nov 2016 19:44:32 +0530</pubDate>
       
-      <guid>https://pranavmahajan25.github.io/portfolio/face-anti-spoofing/</guid>
-      <description>&lt;p&gt;Using auxiliary supervision to detect spoofs in face recognition systems&lt;/p&gt;
+      <guid>https://pranavmahajan25.github.io/portfolio/neuroq/</guid>
+      <description>&lt;p&gt;Designing safe RL algorithms inspired by pain neuroscience.&lt;/p&gt;
 
-&lt;p&gt;@ CSIR-CEERI | Status: Active&lt;/p&gt;</description>
+&lt;p&gt;@ &lt;a href=&#34;https://www.ndcn.ox.ac.uk/&#34;&gt;NDCN&lt;/a&gt; | Status : Active&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Mobility in Cognitive Radio Networks</title>
-      <link>https://pranavmahajan25.github.io/portfolio/mobility_crn/</link>
-      <pubDate>Sat, 05 Nov 2016 19:41:01 +0530</pubDate>
+      <title>ADReSS</title>
+      <link>https://pranavmahajan25.github.io/portfolio/adress/</link>
+      <pubDate>Sat, 05 Nov 2016 19:44:32 +0530</pubDate>
       
-      <guid>https://pranavmahajan25.github.io/portfolio/mobility_crn/</guid>
-      <description>&lt;p&gt;Reinforcement learning based strategy for Mobility-aware wireless sensor networks.&lt;/p&gt;
+      <guid>https://pranavmahajan25.github.io/portfolio/adress/</guid>
+      <description>&lt;p&gt;Early detection of Alzheimer&amp;rsquo;s dementia through spontaneous speech&lt;/p&gt;
 
-&lt;p&gt;Status: Active&lt;/p&gt;</description>
+&lt;p&gt;@ &lt;a href=&#34;http://bitscogneuro.com/&#34;&gt;CNRL&lt;/a&gt; | Status : Active&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Tracking progression of Alzheimer&#39;s disease</title>
+      <link>https://pranavmahajan25.github.io/portfolio/tracking-alzheimers-progression/</link>
+      <pubDate>Sat, 05 Nov 2016 19:44:32 +0530</pubDate>
+      
+      <guid>https://pranavmahajan25.github.io/portfolio/tracking-alzheimers-progression/</guid>
+      <description>&lt;p&gt;Enriching PET-images through network science&lt;/p&gt;
+
+&lt;p&gt;@ &lt;a href=&#34;http://bitscogneuro.com/&#34;&gt;CNRL&lt;/a&gt; | Status : Active&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -45,12 +56,55 @@
     </item>
     
     <item>
-      <title>Generative latent chaotic timeseries</title>
-      <link>https://pranavmahajan25.github.io/portfolio/chaoticts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Asynchronous multi-GPU training for deep learning</title>
+      <link>https://pranavmahajan25.github.io/portfolio/nvidia/</link>
+      <pubDate>Sat, 05 Nov 2016 19:44:32 +0530</pubDate>
       
-      <guid>https://pranavmahajan25.github.io/portfolio/chaoticts/</guid>
-      <description>&lt;p&gt;Status: Active&lt;/p&gt;</description>
+      <guid>https://pranavmahajan25.github.io/portfolio/nvidia/</guid>
+      <description>&lt;p&gt;Asynchronous optimizer for a distributed data parallel training regime&lt;/p&gt;
+
+&lt;p&gt;@ &lt;a href=&#34;https://www.nvidia.com/en-in/&#34;&gt;Nvidia&lt;/a&gt; | Summer, 2020.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NeurIPS reproducibility challenge</title>
+      <link>https://pranavmahajan25.github.io/portfolio/neurips-repro/</link>
+      <pubDate>Sat, 05 Nov 2016 19:44:32 +0530</pubDate>
+      
+      <guid>https://pranavmahajan25.github.io/portfolio/neurips-repro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optimal sub-goal settings</title>
+      <link>https://pranavmahajan25.github.io/portfolio/optimal-sub-goal-settings/</link>
+      <pubDate>Sat, 05 Nov 2016 19:44:32 +0530</pubDate>
+      
+      <guid>https://pranavmahajan25.github.io/portfolio/optimal-sub-goal-settings/</guid>
+      <description>&lt;p&gt;Computational investigation of optimal sub-goal settings under myopic planning horizons using Tower of Hanoi.&lt;/p&gt;
+
+&lt;p&gt;Status : Archived&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SyncBox</title>
+      <link>https://pranavmahajan25.github.io/portfolio/sychronization-in-biological-neural-networks/</link>
+      <pubDate>Sat, 05 Nov 2016 19:44:32 +0530</pubDate>
+      
+      <guid>https://pranavmahajan25.github.io/portfolio/sychronization-in-biological-neural-networks/</guid>
+      <description>&lt;p&gt;Quantifying synchronization in biological neural networks of our visual pathway.&lt;/p&gt;
+
+&lt;p&gt;@ &lt;a href=&#34;https://www.binnlabs-goa.in/&#34;&gt;BINN Labs&lt;/a&gt; | Status : Active&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Deep learning based Face Anti-spoofing</title>
+      <link>https://pranavmahajan25.github.io/portfolio/face-anti-spoofing/</link>
+      <pubDate>Sat, 05 Nov 2016 19:41:01 +0530</pubDate>
+      
+      <guid>https://pranavmahajan25.github.io/portfolio/face-anti-spoofing/</guid>
+      <description>&lt;p&gt;Using auxiliary supervision to detect spoofs in face recognition systems.&lt;br /&gt;
+@ &lt;a href=&#34;https://www.ceeri.res.in/intelligent-systems-group/&#34;&gt;CEERI&lt;/a&gt; | Summer, 2019.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -59,9 +113,34 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pranavmahajan25.github.io/portfolio/mitera-tech/</guid>
-      <description>&lt;p&gt;Summer Internship @ Mitera Tech, Birmingham&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;(May-June 2018)&lt;/em&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/showcase/miteratech/&#34;&gt;Mitera Tech&lt;/a&gt;, Birmingham | Summer, 2018&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>x86 based Cash register</title>
+      <link>https://pranavmahajan25.github.io/portfolio/mup/</link>
+      <pubDate>Sat, 05 Nov 2016 19:41:01 +0530</pubDate>
+      
+      <guid>https://pranavmahajan25.github.io/portfolio/mup/</guid>
+      <description>&lt;p&gt;Status: Archived&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Generative latent chaotic timeseries</title>
+      <link>https://pranavmahajan25.github.io/portfolio/chaoticts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pranavmahajan25.github.io/portfolio/chaoticts/</guid>
+      <description>&lt;p&gt;Status: Archived&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Touchless 3D tracking interface using capacitive sensing</title>
+      <link>https://pranavmahajan25.github.io/portfolio/emt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pranavmahajan25.github.io/portfolio/emt/</guid>
+      <description>&lt;p&gt;Status: Archived&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -75,21 +154,14 @@ I am a Technical writer at Towards Data Science.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>x86 based Cash register</title>
-      <link>https://pranavmahajan25.github.io/portfolio/mup/</link>
+      <title>Mobility in Cognitive Radio Networks</title>
+      <link>https://pranavmahajan25.github.io/portfolio/mobility_crn/</link>
       <pubDate>Sat, 05 Nov 2016 19:41:01 +0530</pubDate>
       
-      <guid>https://pranavmahajan25.github.io/portfolio/mup/</guid>
-      <description>&lt;p&gt;Status: Archived&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Touchless 3D tracking interface using capacitive sensing</title>
-      <link>https://pranavmahajan25.github.io/portfolio/emt/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://pranavmahajan25.github.io/portfolio/emt/</guid>
-      <description>&lt;p&gt;Status: Archived&lt;/p&gt;</description>
+      <guid>https://pranavmahajan25.github.io/portfolio/mobility_crn/</guid>
+      <description>&lt;p&gt;Reinforcement learning based strategy for Mobility-aware wireless sensor networks.&lt;/p&gt;
+
+&lt;p&gt;Status: Archived&lt;/p&gt;</description>
     </item>
     
     <item>

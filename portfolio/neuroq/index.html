@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Deep learning based Face Anti-spoofing</title>
+<title>NeuroQ</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
@@ -102,38 +102,51 @@
   <div class="row">
     <div class="col-lg-8">
       <div class="content-column-content">
-         <h1>Deep learning based Face Anti-spoofing</h1>
-         <p>Using auxiliary supervision to detect spoofs in face recognition systems.<br />
-@ <a href="https://www.ceeri.res.in/intelligent-systems-group/">CEERI</a> | Summer, 2019.</p>
+         <h1>NeuroQ</h1>
+         <p>Designing safe RL algorithms inspired by pain neuroscience.</p>
 
-<p>Team members: Arshdeep Singh, Pranav Mahajan</p>
+<p>@ <a href="https://www.ndcn.ox.ac.uk/">NDCN</a> | Status : Active</p>
 
-<p>Mentors: <a href="https://www.ceeri.res.in/profiles/sanjay-singh/">Dr. Sanjay Singh</a>, <a href="https://www.ceeri.res.in/profiles/sumeet-saurav/">Mr. Sumeet Saurav</a>, <a href="https://www.ceeri.res.in/profiles/shyam/">Mr. Shyam Sundar</a></p>
+<p>Team members: Pranav Mahajan. Guide: <a href="http://www.seymourlab.com/">Dr. Ben Seymour</a>.</p>
 
-<p>This work was done as Summer Research Internship @ Cyber Physical Systems Department, CSIR-CEERI, Pilani, Rajasthan, India.
-Arshdeep and I proposed and trained 2 of 4 deep neural net models that were shipped to LG that summer as a part of LG funded research project (INR 53.10 Lakhs / USD 716k)</p>
+<p>Special thanks to Pain lab members - Dr. Suyi Zhang, Shuangyi Tong and Charlie Yan for their insights and discussions.</p>
 
-<h3 id="overview">Overview</h3>
+<p>This work is being done as a Research intern at <a href="https://www.ndcn.ox.ac.uk/">NDCN</a> and counts towards my undergraduate thesis.</p>
 
-<p>Face recognition systems can be spoofed in atleast 13 different ways, thus there is a necessity of face anti-spoofing systems that work along with them.
-Various end-to-end binary classification models fit to arbitrary cues like screen bezel etc. instead of more faithful features like skin detail loss, colour distortion and shape deformation.
-Thus by using auxiliary supervision, we can nudge the model to learn explainable spatial and temporal information.</p>
+<h3 id="the-story-so-far">The story so far</h3>
 
-<blockquote>
-<p>We are building deep learning models to estimate depth maps for understanding spatial information and estimate rPPG signals for understanding temporal information.</p>
-
-<p>rPPG signals are remote polyplethysmographic signals that correspond to blood flow through our vessels and can be estimated using various techniques as they show high correlation with intensity changes.</p>
-</blockquote>
-
-<h3 id="progress-further-work">Progress &amp; further work</h3>
+<p>This project lies at the two-way intersection of AI and Neuroscience, we wish to answer the following broad questions -</p>
 
 <ul>
-<li>Currently we have depth-estimator models based on 3D-CNN as well as CNN-LSTM architectures.</li>
-<li>Future work includes implementing an rPPG estimator model try different domain adaptation techniques.</li>
-<li>Eventually we wish to do extensive intra and inter database testing with varied input frame length.</li>
+<li>What is responsible for safer behaviours in animals and humans? What does pain neuroscience tell us? And how can we using it to induce safer behaviours in AI-agents?</li>
+<li>How can we use concepts from AI and especially reinforcement learning to guide computational neuroscientific theories adressing anxiety, depression and pain?</li>
 </ul>
 
-<p>Any and all suggestions are welcome. Feel free to reach me at mahajan.pranav25[AT]gmail[DOT]com</p>
+<p>A short summary of the things I&rsquo;ve delved into, in the past half a year -</p>
+
+<blockquote>
+<p>(1) Defining safety from a neuroscientific perspective - Safety in planning agents can mean a lot of things and previous formalization of safety includes a broad spectrum of definitions ranging from robot-like safety to animal like safety.
+Furthermore, in context of animal-like safety definitions, one can naively define it as pain accrued in an episode and cumulative pain accrued over episodes or say in terms of catastrophic deaths required to solve an environment.
+But better definitions also address risk (often treated as variance in returns) into what we call as &ldquo;safe&rdquo;, and better algorithms also include risk prediction to guide the policy!</p>
+
+<p>(2) I initially explored a hypothesis - Is distributional RL safer than traditional RL?. We paused continuing in this direction, because C. Lyle et al. (2019) [1] showed using the coupled-updates method that distributional RL does not in fact produce lower variance value estimates and this suggests that it might just be more sample efficient than traditional RL and not necessarily safer unless of course we only use the lower tail of the distribution for the updates (for example CVaR, IQN [2]).</p>
+
+<p>(3) In the meantime, there was a gap in the &ldquo;safe deep RL&rdquo; testing environments that needed to be addressed and thus developed Safety gym-minigrid which builds on <a href="https://github.com/maximecb/gym-minigrid">gym-minigrid</a>. (And will soon be released) <a href="https://drive.google.com/drive/folders/1nUk-Rzhrv3ROoJPFK0MIHoYYNQ0t1Q3J?usp=sharing">Link</a> to videos of the environment</p>
+</blockquote>
+
+<p><img src="/img/portfolio/all_safety_gym_minigrid.jpg" alt="images" /></p>
+
+<blockquote>
+<p>(4) I am currently focusing on whether innate withdrawal actions and a pavlovian pain system makes agents safer, furthermore we would like to distinguish whether the algorithm is really “safe” or just more efficient.</p>
+</blockquote>
+
+<p>This is a work in progress, stay tuned for more!  Feel free to reach me at mahajan.pranav25[AT]gmail[DOT]com</p>
+
+<p>References:</p>
+
+<p>[1] Lyle, C., Bellemare, M. G., &amp; Castro, P. S. (2019, July). A comparative analysis of expected and distributional reinforcement learning. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 33, pp. 4504-4511).</p>
+
+<p>[2] Dabney, W., Ostrovski, G., Silver, D., &amp; Munos, R. (2018). Implicit quantile networks for distributional reinforcement learning. arXiv preprint arXiv:1806.06923.</p>
          
       </div>
     </div>
